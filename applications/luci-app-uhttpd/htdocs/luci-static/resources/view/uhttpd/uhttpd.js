@@ -54,6 +54,9 @@ return view.extend({
 			return true;
 		};
 
+		o = s.taboption('general', form.Flag, 'enabled_https', _('Enable HTTPS listener'));
+		o.rmempty = false;
+
 		lhttps = s.taboption('general', form.DynamicList, 'listen_https', _('HTTPS listener (address:port)'), _('Bind to specific interface:port (by specifying interface address)'));
 		lhttps.datatype = 'list(ipaddrport(1))';
 
@@ -250,4 +253,14 @@ return view.extend({
 
 		return m.render();
 	},
+
+	handleSaveApply: function (ev, mode) {
+		var restart = L.bind(function () {
+			fs.exec('/etc/init.d/uhttpd', ['restart']);
+			document.removeEventListener('uci-applied', restart);
+		});
+
+		document.addEventListener('uci-applied', restart);
+		return this.super('handleSaveApply', [ev, mode]);
+	}
 });

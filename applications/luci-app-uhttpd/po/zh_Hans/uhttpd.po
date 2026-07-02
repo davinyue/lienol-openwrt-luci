@@ -123,6 +123,10 @@ msgstr "授予UCI访问luci-app-uhttpd的权限"
 msgid "HTTP listeners (address:port)"
 msgstr "HTTP 监听（地址：端口）"
 
+#: applications/luci-app-uhttpd/htdocs/luci-static/resources/view/uhttpd/uhttpd.js:57
+msgid "Enable HTTPS listener"
+msgstr "启用 HTTPS 监听"
+
 #: applications/luci-app-uhttpd/htdocs/luci-static/resources/view/uhttpd/uhttpd.js:103
 msgid "HTTPS Certificate (DER or PEM format)"
 msgstr "HTTPS 证书 (DER 或 PEM 格式)"

@@ -109,6 +109,10 @@ msgstr ""
 msgid "HTTP listeners (address:port)"
 msgstr ""
 
+#: applications/luci-app-uhttpd/htdocs/luci-static/resources/view/uhttpd/uhttpd.js:57
+msgid "Enable HTTPS listener"
+msgstr ""
+
 #: applications/luci-app-uhttpd/htdocs/luci-static/resources/view/uhttpd/uhttpd.js:103
 msgid "HTTPS Certificate (DER or PEM format)"
 msgstr ""
