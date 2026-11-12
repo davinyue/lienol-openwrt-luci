@@ -1,14 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-17 16:40+0000\n"
-"Last-Translator: Volenski <volenski@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-10-18 16:40+0000\n"
+"Last-Translator: Janderson Vieira Santos "
+"<ritew@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsattendedsysupgrade/pt_BR/>\n"
 "Language: pt_BR\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:293
 msgid ""
@@ -31,7 +32,7 @@ msgstr "Endereço do servidor sysupgrade"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:58
 msgid "Advanced Mode"
-msgstr "Modo Avançado"
+msgstr "Modo avançado"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:11
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:728
@@ -139,7 +140,7 @@ msgstr "Dados copiados!"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:403
 msgid "Download"
-msgstr "Download"
+msgstr "Baixar"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:201
 msgid "Download firmware image"
@@ -191,7 +192,7 @@ msgstr "Primeiro, verifique"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:94
 msgid "Generating firmware image"
-msgstr "Gerando a imagem de firmware"
+msgstr "Gerando imagem do firmware"
 
 #: applications/luci-app-attendedsysupgrade/root/usr/share/rpcd/acl.d/luci-app-attendedsysupgrade.json:3
 msgid "Grant UCI access to LuCI app attendedsysupgrade"
@@ -275,7 +276,7 @@ msgstr "Recompiladores"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:204
 msgid "Rebuilds"
-msgstr "Reconstruções"
+msgstr "Recompilações"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:89
 msgid "Received build request"

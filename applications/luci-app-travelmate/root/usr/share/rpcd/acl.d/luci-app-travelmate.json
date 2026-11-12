@@ -2,34 +2,15 @@
 	"luci-app-travelmate": {
 		"description": "Grant access to LuCI app travelmate",
 		"write": {
-			"file": {
-				"/var/run/travelmate/travelmate.refresh": [
-					"write"
-				]
-			},
-			"uci": [
-				"travelmate"
-			]
-		},
-		"read": {
 			"cgi-io": [
 				"exec"
 			],
 			"file": {
-				"/etc/travelmate/*.login": [
-					"list"
-				],
-				"/var/run/travelmate/travelmate.pid": [
-					"read"
-				],
-				"/var/run/travelmate/travelmate.scan": [
-					"read"
-				],
 				"/var/run/travelmate/travelmate.refresh": [
-					"read"
+					"write"
 				],
-				"/var/run/travelmate/travelmate.runtime.json": [
-					"read"
+				"/tmp/run/travelmate/travelmate.refresh": [
+					"write"
 				],
 				"/sbin/ifup *": [
 					"exec"
@@ -48,6 +29,55 @@
 				],
 				"/etc/init.d/travelmate scan *": [
 					"exec"
+				]
+			},
+			"ubus": {
+				"file": [
+					"exec"
+				]
+			},
+			"uci": [
+				"travelmate",
+				"wireless"
+			]
+		},
+		"read": {
+			"cgi-io": [
+				"download"
+			],
+			"file": {
+				"/etc/travelmate": [
+					"list"
+				],
+				"/etc/travelmate/*.login": [
+					"list"
+				],
+				"/var/run/travelmate/travelmate.scan": [
+					"read"
+				],
+				"/tmp/run/travelmate/travelmate.scan": [
+					"read"
+				],
+				"/var/run/travelmate/travelmate.refresh": [
+					"read",
+					"list"
+				],
+				"/tmp/run/travelmate/travelmate.refresh": [
+					"read",
+					"list"
+				],
+				"/var/run/travelmate/travelmate.runtime.json": [
+					"read",
+					"list"
+				],
+				"/tmp/run/travelmate/travelmate.runtime.json": [
+					"read",
+					"list"
+				]
+			},
+			"ubus": {
+				"file": [
+					"stat"
 				]
 			},
 			"uci": [
